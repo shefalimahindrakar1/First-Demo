@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.firstdemo.core.servlets.ExecuteWorkflow">
+  <property name="sling.servlet.paths" type="String">/bin/executeworkflow
+/firstdemo/executeworkflow</property>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <implementation class="com.firstdemo.core.servlets.ExecuteWorkflow"/>
+</scr:component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.firstdemo.core.services.DemoServiceAImpl" immediate="true" activate="activate" deactivate="deactivate" modified="modified">
+  <service>
+    <provide interface="com.firstdemo.core.services.DemoService"/>
+  </service>
+  <reference name="resourceResolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" field="resourceResolverFactory"/>
+  <reference name="slingRepository" interface="org.apache.sling.jcr.api.SlingRepository" field="slingRepository"/>
+  <implementation class="com.firstdemo.core.services.DemoServiceAImpl"/>
+</scr:component>

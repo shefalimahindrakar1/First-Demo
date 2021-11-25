@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.firstdemo.core.models.FirstDemoXmlExporter">
+  <service>
+    <provide interface="org.apache.sling.models.export.spi.ModelExporter"/>
+  </service>
+  <implementation class="com.firstdemo.core.models.FirstDemoXmlExporter"/>
+</scr:component>

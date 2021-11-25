@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.firstdemo.core.services.OSGIFactoryConfigImpl" configuration-policy="require" activate="activate" modified="activate">
+  <property name="serviceName" type="String" value="Service #"/>
+  <property name="serviceURL" type="String" value="URL #"/>
+  <service>
+    <provide interface="com.firstdemo.core.services.OSGIFactoryConfig"/>
+  </service>
+  <reference name="OSGiFactoryConfig" cardinality="0..n" policy="dynamic" interface="com.firstdemo.core.services.OSGIFactoryConfig" bind="bindOSGiFactoryConfig" unbind="unbindOSGiFactoryConfig"/>
+  <implementation class="com.firstdemo.core.services.OSGIFactoryConfigImpl"/>
+</scr:component>

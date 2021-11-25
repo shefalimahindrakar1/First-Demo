@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.firstdemo.core.config.DemoOSGIConfig">
+  <OCD id="com.firstdemo.core.config.DemoOSGIConfig" name="First Demo - Modular OSGI Configuration" description="Modular OSGI Configuration demo.">
+    <AD id="serviceID" type="Integer" name="Service ID" description="Enter service id."/>
+    <AD id="serviceName" type="String" name="Service Name" description="Enter service name." default="First\ Demo\ Service"/>
+    <AD id="serviceURL" type="String" name="Service URL" description="Add Service URL." default="localhost"/>
+  </OCD>
+  <Designate pid="com.firstdemo.core.services.OSGIConfigModuleImpl">
+    <Object ocdref="com.firstdemo.core.config.DemoOSGIConfig"/>
+  </Designate>
+</metatype:MetaData>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="firstdemo.ui.tests" />
+        <module name="firstdemo.it.tests" />
+        <module name="firstdemo.all" />
+        <module name="firstdemo.ui.apps.structure" />
+        <module name="firstdemo.ui.content" />
+        <module name="firstdemo.ui.config" />
+        <module name="firstdemo.ui.apps" />
+        <module name="firstdemo.core" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="firstdemo" target="1.8" />
+      <module name="firstdemo.all" target="1.8" />
+      <module name="firstdemo.core" target="1.8" />
+      <module name="firstdemo.it.tests" target="1.8" />
+      <module name="firstdemo.ui.apps" target="1.8" />
+      <module name="firstdemo.ui.apps.structure" target="1.8" />
+      <module name="firstdemo.ui.config" target="1.8" />
+      <module name="firstdemo.ui.content" target="1.8" />
+      <module name="firstdemo.ui.tests" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

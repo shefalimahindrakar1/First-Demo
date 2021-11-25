@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.firstdemo.core.services.DemoServiceBImpl" immediate="true">
+  <service>
+    <provide interface="com.firstdemo.core.services.DemoServiceB"/>
+  </service>
+  <reference name="demoService" interface="com.firstdemo.core.services.DemoService" field="demoService"/>
+  <reference name="multiService" interface="com.firstdemo.core.services.MultiService" target="(component.name=com.firstdemo.core.services.MultiServiceBImpl)" field="multiService"/>
+  <implementation class="com.firstdemo.core.services.DemoServiceBImpl"/>
+</scr:component>

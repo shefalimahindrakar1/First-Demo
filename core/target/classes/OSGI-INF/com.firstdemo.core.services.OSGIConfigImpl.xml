@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.firstdemo.core.services.OSGIConfigImpl" immediate="true" activate="activate">
+  <property name="serviceName" type="String" value="First Demo Service"/>
+  <property name="getServiceCount" type="Integer" value="5"/>
+  <property name="getLiveData" type="Boolean" value="false"/>
+  <property name="getCountries" type="String">de
+in</property>
+  <property name="getRunMode" type="String" value="both"/>
+  <service>
+    <provide interface="com.firstdemo.core.services.OSGIConfig"/>
+  </service>
+  <implementation class="com.firstdemo.core.services.OSGIConfigImpl"/>
+</scr:component>

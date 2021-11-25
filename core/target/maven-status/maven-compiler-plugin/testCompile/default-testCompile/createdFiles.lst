@@ -1,0 +1,5 @@
+com\firstdemo\core\filters\LoggingFilterTest.class
+com\firstdemo\core\servlets\SimpleServletTest.class
+com\firstdemo\core\models\HelloWorldModelTest.class
+com\firstdemo\core\listeners\SimpleResourceListenerTest.class
+com\firstdemo\core\schedulers\SimpleScheduledTaskTest.class

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.firstdemo.core.config.DemoOSGIFactoryConfig">
+  <OCD id="com.firstdemo.core.config.DemoOSGIFactoryConfig" name="First Demo - OSGI Factory Configuration" description="OSGI Factory Configuration demo.">
+    <AD id="configID" type="Integer" name="Config ID" description="Enter service id."/>
+    <AD id="serviceName" type="String" name="Service Name" description="Enter service name." default="Service\ #"/>
+    <AD id="serviceURL" type="String" name="Service URL" description="Add Service URL." default="URL\ #"/>
+  </OCD>
+  <Designate factoryPid="com.firstdemo.core.services.OSGIFactoryConfigImpl">
+    <Object ocdref="com.firstdemo.core.config.DemoOSGIFactoryConfig"/>
+  </Designate>
+</metatype:MetaData>

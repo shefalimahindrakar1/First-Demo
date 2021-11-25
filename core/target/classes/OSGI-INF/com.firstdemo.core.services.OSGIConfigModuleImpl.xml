@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.firstdemo.core.services.OSGIConfigModuleImpl" immediate="true" activate="activate">
+  <property name="serviceName" type="String" value="First Demo Service"/>
+  <property name="serviceURL" type="String" value="localhost"/>
+  <service>
+    <provide interface="com.firstdemo.core.services.OSGIConfigModule"/>
+  </service>
+  <implementation class="com.firstdemo.core.services.OSGIConfigModuleImpl"/>
+</scr:component>

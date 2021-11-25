@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/firstdemo.iml" filepath="$PROJECT_DIR$/firstdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all/firstdemo.all.iml" filepath="$PROJECT_DIR$/all/firstdemo.all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/firstdemo.core.iml" filepath="$PROJECT_DIR$/core/firstdemo.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/it.tests/firstdemo.it.tests.iml" filepath="$PROJECT_DIR$/it.tests/firstdemo.it.tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.apps/firstdemo.ui.apps.iml" filepath="$PROJECT_DIR$/ui.apps/firstdemo.ui.apps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.apps.structure/firstdemo.ui.apps.structure.iml" filepath="$PROJECT_DIR$/ui.apps.structure/firstdemo.ui.apps.structure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.config/firstdemo.ui.config.iml" filepath="$PROJECT_DIR$/ui.config/firstdemo.ui.config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.content/firstdemo.ui.content.iml" filepath="$PROJECT_DIR$/ui.content/firstdemo.ui.content.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.tests/firstdemo.ui.tests.iml" filepath="$PROJECT_DIR$/ui.tests/firstdemo.ui.tests.iml" />
+    </modules>
+  </component>
+</project>

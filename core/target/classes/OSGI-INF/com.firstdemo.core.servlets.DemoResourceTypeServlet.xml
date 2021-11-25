@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.firstdemo.core.servlets.DemoResourceTypeServlet">
+  <property name="sling.servlet.resourceTypes" type="String">firstdemo/components/structure/page</property>
+  <property name="sling.servlet.resourceSuperType" type="String" value="sling/bundle/resource"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <implementation class="com.firstdemo.core.servlets.DemoResourceTypeServlet"/>
+</scr:component>

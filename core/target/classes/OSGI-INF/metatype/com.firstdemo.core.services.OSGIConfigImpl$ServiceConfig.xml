@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.firstdemo.core.services.OSGIConfigImpl$ServiceConfig">
+  <OCD id="com.firstdemo.core.services.OSGIConfigImpl$ServiceConfig" name="First Demo - OSGI Configuration" description="OSGI Configuration demo.">
+    <AD id="serviceName" type="String" name="Service Name" description="Enter service name." default="First\ Demo\ Service"/>
+    <AD id="getServiceCount" type="Integer" name="Service Count" description="Add Service Count." default="5"/>
+    <AD id="getLiveData" type="Boolean" name="Live Data" description="Check this to get live data." default="false"/>
+    <AD id="getCountries" type="String" cardinality="2147483647" name="Countries" description="Add countries locales for which you want to run this service." default="de,in"/>
+    <AD id="getRunMode" type="String" name="Run Modes" description="Select Run Mode." default="both">
+      <Option label="Author" value="author"/>
+      <Option label="Publish" value="publish"/>
+      <Option label="Both" value="both"/>
+    </AD>
+  </OCD>
+  <Designate pid="com.firstdemo.core.services.OSGIConfigImpl">
+    <Object ocdref="com.firstdemo.core.services.OSGIConfigImpl$ServiceConfig"/>
+  </Designate>
+</metatype:MetaData>
