@@ -1,0 +1,29 @@
+<script>
+    function addition(){
+        var first= $('#first').val();
+        var second= $('#second').val();
+        $.ajax({
+            url : '/bin/additionServlet',
+            method : 'GET',
+            data : {first : first, second : second},
+            success : function(resultText){
+                $('#sum').text(resultText);
+                console.log(resultText)
+            },
+            error:function(jqXHR,exception){
+                console.log('Error');
+            }
+        });
+    }
+</script>
+<label>First number :</label>
+<input type="number" id="first" placeholder="Enter First Number">
+<br>
+<label>Second number :</label>
+<input type="number" id="second" placeholder="Enter Second Number">
+<br>
+<button type="submit" class="btn btn-primary" onclick="addition()">Add</button>
+<br>
+<br>
+<h4>Addition is : </h4>
+<h4 id="sum"></h4>
