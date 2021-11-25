@@ -83,10 +83,11 @@ Service-Component: OSGI-INF/com.firstdemo.core.filters.LoggingFilter.x
  .MultiServiceBImpl.xml,OSGI-INF/com.firstdemo.core.services.OSGIConfi
  gImpl.xml,OSGI-INF/com.firstdemo.core.services.OSGIConfigModuleImpl.x
  ml,OSGI-INF/com.firstdemo.core.services.OSGIFactoryConfigImpl.xml,OSG
- I-INF/com.firstdemo.core.servlets.DemoResourceTypeServlet.xml,OSGI-IN
- F/com.firstdemo.core.servlets.ExecuteWorkflow.xml,OSGI-INF/com.firstd
- emo.core.servlets.SimpleServlet.xml,OSGI-INF/com.firstdemo.core.workf
- lows.FirstDemoWorkflowStep.xml
+ I-INF/com.firstdemo.core.servlets.AdditionServlet.xml,OSGI-INF/com.fi
+ rstdemo.core.servlets.DemoResourceTypeServlet.xml,OSGI-INF/com.firstd
+ emo.core.servlets.ExecuteWorkflow.xml,OSGI-INF/com.firstdemo.core.ser
+ vlets.SimpleServlet.xml,OSGI-INF/com.firstdemo.core.workflows.FirstDe
+ moWorkflowStep.xml
 Sling-Model-Classes: com.firstdemo.core.models.AuthorBooksImpl,com.fir
  stdemo.core.models.AuthorImpl,com.firstdemo.core.models.ExmExporterIm
  pl,com.firstdemo.core.models.HelloWorldModel,com.firstdemo.core.model

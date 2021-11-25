@@ -45,5 +45,6 @@ com\firstdemo\core\models\FirstDemoXmlExporter.class
 com\firstdemo\core\services\DemoServiceB.class
 com\firstdemo\core\filters\LoggingFilter.class
 com\firstdemo\core\models\ServiceDemo.class
+com\firstdemo\core\servlets\AdditionServlet.class
 com\firstdemo\core\services\OSGIConfigImpl$ServiceConfig.class
 com\firstdemo\core\servlets\package-info.class
