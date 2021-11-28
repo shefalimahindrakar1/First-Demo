@@ -1,0 +1,133 @@
+<h1>-----Sightly Demo-----</h1>
+<div data-sly-use.author="com.firstdemo.core.models.Author"></div>
+----------------------Scheme--------------------------
+
+<div>${'//firstdemo.com/path/page.html' @ scheme='http'}</div>
+<div>${'http://firstdemo.com/path/page.html' @ scheme='https'}</div>
+<div>${'https://firstdemo.com/path/page.html' @ scheme='http'}</div>
+<div>${'https://firstdemo.com/path/page.html' @ scheme=''}</div>
+<div>${'https://firstdemo.com/path/page.html' @ scheme}</div>
+
+ 
+----------------------Domain--------------------------
+
+<div>${'///path/page.html' @ domain='firstdemo.com'}</div>
+<div>${'///path/page.html' @ scheme='https', domain='firstdemo.com'}</div>
+<div>${'http://firstdemo.com/path/page.html' @ domain='aemdemo.com'}</div>
+
+ ----------------------Selectors--------------------------
+
+ 
+<div>${'///path/page.html' @ selectors='selector1.selector2'}</div>
+<div>${'///path/page.html' @ selectors=['selector3', 'selector4']}</div>
+<div>${'///path/page.selector3.selector4.html' @ addSelectors=['selector5', 'selector6']}</div>
+<div>${'///path/page.selector3.selector4.html' @ removeSelectors=['selector3']}</div>
+<div>${'///path/page.selector3.selector4.html' @ selectors=''}</div>
+<div>${'///path/page.selector3.selector4.html' @ selectors}</div>
+
+ 
+----------------------Extension--------------------------
+
+ <div>${'https://firstdemo.com/path/page.html' @ extension='json'}</div>
+<div>${'https://firstdemo.com/path/page' @ extension='html'}</div>
+<div>${'https://firstdemo.com/path/page.html' @ extension}</div>
+
+ 
+----------------------Suffix--------------------------
+
+ <div>${'///path/page.html' @ suffix='demo/suffix'}</div>
+<div>${'///path/page.htmldemo/suffix' @ prependSuffix='prepended'}</div>
+<div>${'///path/page.htmldemo/suffix' @ appendSuffix='appended'}</div>
+<div>${'///path/page.htmldemo/suffix' @ suffix}</div>
+
+ 
+----------------------Fragment--------------------------
+
+ <div>${'https://firstdemo.com/path/page.html' @ fragment='fragment1'}</div>
+<div>${'https://firstdemo.com/path/page#fragment1' @ fragment='fragment2'}</div>
+<div>${'https://firstdemo.com/path/page.html#fragment2' @ fragment}</div>
+
+
+<!--  <div style="color: ${'#FFA500' @ context='styleToken'};font-style : ${'italic' @ context='styleToken'};font-family :${'Arial, Helvetica, sans-serif' @ context='styleString'};">
+    <p>This is style token</p>
+    <p>${'<h1>Test HTML Context HTML</h1>' @ context='html'}</p>
+    <p>${'34343' @ context='number'}</p>
+</div>
+
+<div>
+    <script>
+    function testScriptContext(){
+    var contexttest="${'This is context' @ context = 'scriptString'}";
+console.log("------Script Context being tested------"+contexttest); 
+}
+</script>
+    <input type="button" class="btn btn-info" onclick="${'testScriptContext' @ context='scriptToken'}()" value="Check Script Context">
+</div>
+
+
+
+<div><p> Dialog : <b> ${properties.fname}</b></p></div>
+<div><p> Page Properties : <b> ${pageProperties.jcr:title}</b></p></div>
+<div><p> Inherited Page Properties : <b> ${inheritedPageProperties['jcr:title']}</b></p></div>
+
+
+<div><p> Component : <b> ${component['title']}</b></p></div>
+<div><p> Component Context : <b> ${componentContext.page.title}</b></p></div>
+<div><p> Design Node : <b> ${currentDesign.path}</b></p></div>
+<div><p> Current Node : <b> ${currentNode.path}</b></p></div>
+<div><p> Current Page : <b> ${currentPage.path}</b></p></div>
+<div><p> Resource : <b> ${resource.path}</b></p></div>
+<div><p> Resource Page : <b> ${resourcePage.path}</b></p></div>
+<div><p> Resource Design : <b> ${resourceDesign.path}</b></p></div>
+<div><p> WCMMODE -> EDIT / PREVIEW : <b> ${wcmmode.edit} / ${wcmmode.preview}</b></p></div>
+
+<div id="html-attribute">
+<p>using html tag</p>
+</div>
+
+<div id="sigthly-attribute" data-sly-attribute="${author.booksMap}" data-sly-attribute.attribute1="Overwritten value">
+<p>using sightly tag</p>
+</div>
+
+
+=================USING LIST=================
+<div data-sly-list.item="${author.books}">
+<p> Index : <b>${itemList.index}</b>, First : <b>${itemList.first} </b>, Middle : <b>${itemList.middle} </b>, Last : <b>${itemList.last} </b>, Odd : <b>${itemList.odd} </b></p>
+<p> Book : ##${itemList.count}: <b>${item}</b></p>
+</div>
+
+=================USING REPEAT=================
+<div class="repeat" data-sly-repeat.item="${author.books}">
+<p> Book #${itemList.count}: <b>${item} </b></p>
+</div>
+
+=================USING LIST WITH MAP=================
+<div data-sly-list.item="${author.bookDetailsWithMap}">
+<p> Book : <b>${item.bookname} </b></p>
+<p> Subject : <b>${item.booksubject} </b></p>
+</div>
+
+
+=================FROM TEMPLATE=================
+<div data-sly-use.booksTemplate="authorbooks.html">
+<sly data-sly-call="${booksTemplate.authorBooks @ books=author}"/>
+<sly data-sly-call="${booksTemplate.mapAttributes @ attribute=author.booksMap}"/>
+</div>
+
+
+=================USING MAP=================
+<div data-sly-list.item="${author.booksMap}">
+<p> key : <b>${item} </b></p>
+<p> value : <b>${author.booksMap[item]} </b></p>
+</div> -->
+
+
+<!--<div data-sly-include="include1.html">FIRST DEMO</div>
+
+<div data-sly-include="include2.jsp"></div>-->
+
+<!--<div data-sly-resource="${''}"></div>
+
+<div data-sly-resource="${@ path='author', resourceType='firstdemo/components/content/author-books'}"></div>-->
+
+

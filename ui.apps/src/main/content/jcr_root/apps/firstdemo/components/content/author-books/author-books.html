@@ -1,0 +1,82 @@
+<div data-sly-use.books="com.firstdemo.core.models.AuthorBooks">
+
+
+==============USING LIST=================
+
+ <div data-sly-list.item="${books.pageInfo}">
+<p> Page : <b>${item.title} : ${item.name}</b></p>
+</div>
+
+ ==============USING ITERATOR=================
+
+ <div data-sly-list.item="${books.pageIterator}">
+<p> Page : <b>${item.title} : ${item.name}</b></p>
+</div>
+
+
+<!--<div data-sly-list.item="${books.bookDetailsWithMap}"> 
+<p> Book : <b>${item.bookname} </b></p>
+<p> Subject : <b>${item.booksubject} </b></p>
+<p> Publish Year : <b>${'#.00' @ format=item.publishyear, type='number'} </b></p> 
+<p> Publish Year : <b>${'#,###.00' @ format=item.publishyear, type='number'} </b></p>
+<p> Publish Year : <b>${'#.00;(#.00)' @ format=item.publishyear, type='number'} </b></p>
+<p> Publish Year : <b>${'#.###;-#.###' @ format=item.publishyear, type='number'} </b></p>
+<p> Publish Year : <b>${'#.000E00' @ format=item.publishyear, type='number'} </b></p> 
+<p> Publish Year : <b>${'#%' @ format=item.publishyear, type='number'} </b></p>
+</div
+
+---------------------JOINS-----------------------------------------------
+<div>a present in abc : ${'a' in 'abc'}</div>
+<div>ac present in abc : ${'ac' in 'abc'}</div>
+<div>JAVA present in LIST: ${'JAVA' in books.books}</div>
+<div>attribute1 present in MAP: ${'attribute1' in books.booksMap}</div>
+<ul data-sly-list="${books.authorBooks}">
+<li>${'Book {0} out of total Books {1}' @ format=[item, books.authorBooks.size]}</li>
+</ul>
+<div>${books.authorBooks @ join=', '}</div>
+
+
+
+
+
+
+    <h1>${books.authorName} Books</h1>
+    ===================Multifield with single field=============
+    <div data-sly-list.item="${books.authorBooks}">
+         ---------------Book : ${itemList.count}--------------
+        <p> Book : <b>${item} </b></p>
+    </div>
+    <p> ALL Book : <b>${books.authorBooks @ join=', '}</b></p>
+
+
+
+ ========================== USING MAP ================================
+    <div data-sly-list.item="${books.bookDetailsWithMap}">
+        ---------------Book : ${itemList.count}--------------
+        <p> Book : <b>${item.bookname} </b></p>
+        <p> Subject : <b>${item.booksubject}</b> </p>
+        <p> Publish : <b>${item.publishyear}</b> </p>
+    </div>
+
+
+    ========================== USING BEAN ================================
+    <div data-sly-list.item="${books.bookDetailsWithBean}">
+        ---------------Book : ${itemList.count}--------------
+        <p> Book : <b>${item.bookName} </b></p>
+        <p> Date : <b>${'MMM dd,yyyy' @ format=item.publishDate}</b> </p>
+            <p>Time :<b>${'yyyy-MM-dd HH:mm' @format=item.publishDate, timezone='UTC'}</b><p>
+        <p> Copies : <b>${item.copies}</b> </p>
+    </div>
+
+
+    ================== USING NASTED MULTIFIELD ====================
+    <div data-sly-list="${books.bookDetailsWithNastedMultifield}">
+        ---------------Book : ${itemList.count}--------------
+        <p> Book : <b>${item.bookName} </b></p>
+        <p> Subject : <b>${item.bookSubject} </b></p>
+        <div data-sly-list.editon="${item.bookEditons}">
+            <p> Book Editon : <b>${editon.bookEditon} </b></p>
+            <p> Published Date : <b>${'MMM dd,yyyy' @ format=editon.editonDate}</b> </p>
+        </div>
+    </div>
+    </div>-->
